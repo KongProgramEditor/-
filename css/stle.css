@@ -1,0 +1,32 @@
+/* Default styling (for large screens) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* For medium screens (tablets, landscape phones) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* For small screens (portrait phones) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
+  
+  /* ใช้เปอร์เซ็นต์เพื่อให้เนื้อหายืดหยุ่น */
+.container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  img {
+    width: 100%; /* ทำให้รูปภาพยืดตามขนาดของ container */
+    height: auto;
+  }
+  
