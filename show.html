@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* พื้นฐานของเว็บ */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #333;
+        }
+
+        /* ส่วนที่มีการเลื่อนขึ้น (scroll-section) */
+        .scroll-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            opacity: 0; /* ซ่อนเนื้อหาเริ่มต้น */
+            transform: translateY(30px); /* เลื่อนเนื้อหาลงมาจากข้างบน */
+            transition: opacity 1s, transform 1s;
+        }
+
+        .scroll-section.visible {
+            opacity: 1;
+            transform: translateY(0); /* เนื้อหาปรากฏขึ้น */
+        }
+
+        .scroll-section img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+
+        .scroll-section .description {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            color: #555;
+        }
+
+        /* Section ที่แบ่งแต่ละส่วน */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* สำหรับโชว์ผลงาน */
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Section: About Me -->
+    <section style="background-image: url('images/img23.jpg'); background-size: cover; background-position: center; padding: 50px 20px; text-align: center; color: white; position: relative; border: 5px solid #fff; border-radius: 10px;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+            <h2 style="color: #ffcc00;">เกี่ยวกับฉัน</h2>
+            <p style="color: #ffffff;">
+                สวัสดีครับ ผมชื่อ ณัฏฐกิตติ์ หาญเจริญชัย หรือ ก้อง ครับ อายุ 14 ปีแล้วคับ ผมสนใจในงานถ่ายภาพ, การถ่ายทำวิดีโอ การเขียนโปรแกรม และการเล่นระนาด ผมมุ่งมั่นในการเรียนรู้และพัฒนาทักษะในด้านต่างๆ เพื่อสร้างผลงานที่มีคุณภาพและตอบโจทย์ความต้องการของผู้คน ผมมีประสบการณ์ในการทำงานในหลากหลายโปรเจกต์ และเชื่อมั่นในความสามารถในการแก้ไขปัญหาทางเทคนิคต่างๆ
+            </p>
+        </div>
+    </section>
+
+    <!-- Section: Portfolio -->
+    <section>
+        <h2>Show</h2>
+        <div class="portfolio">
+            <img src="images/eddd.jpg"รูปที่ 1">
+            <img src="images/imgranat.jpg" alt="รูปที่ 2">
+            <img src="images/imgtv.jpg" alt="รูปที่ 3">
+            <img src="images/IMG20240729094829.jpg" alt="รูปที่ 4">
+            <img src="images/dddddd.jpg" alt="รูปที่ 5">
+        </div>
+    </section>
+
+    <!-- Section: Skills -->
+    <!-- Section: Photos -->
+<section>
+    <h2>Photos</h2>
+    <div class="portfolio">
+        <img src="images/ก.jpg" alt="รูปที่ 1">
+        <img src="images/TNB-1931.jpg" alt="รูปที่ 2">
+        <img src="images/TNB-1800.jpg" alt="รูปที่ 3">
+        <img src="images/rrr.jpg" alt="รูปที่ 4">
+        <img src="images/eeee.jpg" alt="รูปที่ 5">
+        <img src="images/photo6.jpg" alt="รูปที่ 6">
+    </div>
+</section>
+
+    <!-- Section: Abilities -->
+    <!-- Section: My Photo (รูปโปรแกรม) -->
+<!-- Section: My Photo (รูปโปรแกรม) -->
+<!-- Section: My Photo (รูปโปรแกรม) -->
+<section>
+    <div style="display: flex; align-items: center; height: 300px; margin: 0;">
+        <!-- รูปภาพ -->
+        <div style="flex: 1; padding: 0; overflow: hidden; border-radius: 10px;">
+            <img src="images/img000.jpg" alt="รูปของฉัน" style="width: 30%; height: 100%; object-fit: cover;">
+        </div>
+        <!-- พื้นที่สีฟ้า -->
+        <div style="flex: 1; background-color: #00aaff; height: 100%; margin: 0;"></div>
+    </div>
+</section>
+
+
+
+
+    <!-- Section: Contact -->
+    <section>
+        <h2>ข้อมูลติดต่อ</h2>
+        <p>อีเมล: <a href="mailto:your.email@example.com">your.email@example.com</a><br>โทรศัพท์: 08x-xxx-xxxx</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 เว็บไซต์ของฉัน | สร้างโดย [ชื่อของคุณ]</p>
+    </footer>
+
+    <script>
+        // ฟังก์ชันสำหรับแสดงเนื้อหาตอนเลื่อนหน้าเว็บ
+        function handleScroll() {
+            const sections = document.querySelectorAll('.scroll-section');
+            sections.forEach(section => {
+                const sectionPosition = section.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight;
+
+                if (sectionPosition < screenPosition) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+</body>
+</html>
